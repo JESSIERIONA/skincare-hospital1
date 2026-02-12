@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumina Skin Hospital</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <style>
+    body { overflow-x: hidden; }
+  </style>
+</head>
+
+<body class="bg-neutral-50 text-slate-900">
+
+<!-- NAVBAR -->
+<header class="fixed w-full z-50 bg-white/70 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-xl">LUMINA</h1>
+    <nav class="space-x-6 hidden md:block">
+      <a href="index.html" class="hover:text-yellow-500 transition">Home</a>
+      <a href="about.html" class="hover:text-yellow-500 transition">About</a>
+      <a href="treatments.html" class="hover:text-yellow-500 transition">Treatments</a>
+      <a href="doctors.html" class="hover:text-yellow-500 transition">Doctors</a>
+      <a href="contacts.html" class="hover:text-yellow-500 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="h-screen flex items-center justify-center relative overflow-hidden bg-slate-900 text-white">
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
+
+  <div class="relative z-10 text-center px-6">
+    <h2 class="hero-title text-5xl md:text-8xl font-bold mb-6">
+      Advanced Skincare
+    </h2>
+    <p class="hero-sub text-lg md:text-xl text-gray-300 mb-8">
+      Science. Precision. Beauty.
+    </p>
+    <button class="hero-btn px-8 py-4 bg-yellow-500 text-black rounded-full font-semibold hover:scale-105 transition">
+      Book Consultation
+    </button>
+  </div>
+
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="py-32">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <img src="https://images.unsplash.com/photo-1606813902783-7b2e99d03d0a"
+         class="parallax-img rounded-2xl shadow-xl reveal" />
+    <div class="reveal">
+      <h3 class="text-4xl font-bold mb-6">Where Dermatology Meets Innovation</h3>
+      <p class="text-gray-600 mb-6">
+        We combine medical science and aesthetic precision to redefine skincare excellence.
+      </p>
+      <a href="about.html" class="text-yellow-500 font-semibold">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section class="py-32 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-16 text-center">Our Treatments</h3>
+
+    <div class="card-container grid md:grid-cols-3 gap-10">
+      <div class="card bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-bold mb-4">Laser Therapy</h4>
+        <p class="text-gray-500">Advanced laser technology for flawless skin.</p>
+      </div>
+
+      <div class="card bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-bold mb-4">Chemical Peels</h4>
+        <p class="text-gray-500">Professional skin resurfacing treatments.</p>
+      </div>
+
+      <div class="card bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-bold mb-4">Acne Solutions</h4>
+        <p class="text-gray-500">Customized acne management programs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 bg-slate-900 text-white text-center">
+  <p>© 2026 Lumina Skin Hospital. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
